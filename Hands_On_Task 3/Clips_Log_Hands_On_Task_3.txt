@@ -1,0 +1,123 @@
+ CLIPS (6.4.2 1/14/25)
+CLIPS> (printout t "Hello World!" crlf)
+Hello World!
+CLIPS> (assert (duck))
+<Fact-1>
+CLIPS> (facts)
+f-1     (duck)
+For a total of 1 fact.
+CLIPS> (assert (duck))
+<Fact-1>
+CLIPS> (facts)
+f-1     (duck)
+For a total of 1 fact.
+CLIPS> (clear)
+CLIPS> (facts)
+CLIPS> (reset)
+CLIPS> (facts)
+CLIPS> (assert (duck))
+<Fact-1>
+CLIPS> (assert (quack))
+<Fact-2>
+CLIPS> (facts)
+f-1     (duck)
+f-2     (quack)
+For a total of 2 facts.
+CLIPS> (clear)
+CLIPS> (assert (a) (b) (c))
+<Fact-3>
+CLIPS> (facts)
+f-1     (a)
+f-2     (b)
+f-3     (c)
+For a total of 3 facts.
+CLIPS> (facts 0)
+f-1     (a)
+f-2     (b)
+f-3     (c)
+For a total of 3 facts.
+CLIPS> (facts 1)
+f-1     (a)
+f-2     (b)
+f-3     (c)
+For a total of 3 facts.
+CLIPS> (facts 2)
+f-2     (b)
+f-3     (c)
+For a total of 2 facts.
+CLIPS> (facts 1 2)
+f-1     (a)
+f-2     (b)
+For a total of 2 facts.
+CLIPS> (facts 1 3 2)
+f-1     (a)
+f-2     (b)
+For a total of 2 facts.
+CLIPS> (clear)
+CLIPS> (facts)
+CLIPS> (assert (number 1))
+<Fact-1>
+CLIPS> (assert (x 1.5))
+<Fact-2>
+CLIPS> (assert (y -1))
+<Fact-3>
+CLIPS> (assert (z 65))
+<Fact-4>
+CLIPS> (assert (distance 3.5e5))
+<Fact-5>
+CLIPS> (assert (coordinates 1 2 3))
+<Fact-6>
+CLIPS> (assert (coordinates 1 3 2))
+<Fact-7>
+CLIPS> (facts)
+f-1     (number 1)
+f-2     (x 1.5)
+f-3     (y -1)
+f-4     (z 65)
+f-5     (distance 350000.0)
+f-6     (coordinates 1 2 3)
+f-7     (coordinates 1 3 2)
+For a total of 7 facts.
+CLIPS> (clear)
+CLIPS> (assert (The duck says "Quack"))
+<Fact-1>
+CLIPS> (facts)
+f-1     (The duck says "Quack")
+For a total of 1 fact.
+CLIPS> (clear)
+CLIPS> (assert (The    duck    says    "Quack"    ))
+<Fact-1>
+CLIPS> (facts)
+f-1     (The duck says "Quack")
+For a total of 1 fact.
+CLIPS> (clear)
+CLIPS> (assert (The
+duck
+says
+"Quack"))
+<Fact-1>
+CLIPS> (facts)
+f-1     (The duck says "Quack")
+For a total of 1 fact.
+CLIPS> (assert (The
+duck
+says
+"Quack
+"))
+<Fact-2>
+CLIPS> (facts)
+f-1     (The duck says "Quack")
+f-2     (The duck says "Quack
+")
+For a total of 2 facts.
+CLIPS> (clear)
+CLIPS> (assert (grocery-list
+ice_cream
+cookies
+candy
+fudge-sauce))
+<Fact-1>
+CLIPS> (facts)
+f-1     (grocery-list ice_cream cookies candy fudge-sauce)
+For a total of 1 fact.
+CLIPS> 
